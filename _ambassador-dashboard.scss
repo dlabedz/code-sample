@@ -1,0 +1,444 @@
+.page-template-page-ambassador-dashboard{
+
+    .row{
+        margin-right:0;
+        margin-left:0;
+
+        &.display-flex{
+            @media (min-width: $bp_tablet) {
+                display:flex;
+            }
+        }
+    }
+
+    .container{
+   
+        @media (min-width: $bp_desktop) {
+            margin-top:3rem;
+        }
+
+    }
+
+    h2 {
+        font-size: 21px;
+        padding-left: 0.75rem;
+    }
+
+    h4{
+        margin-bottom: 0;
+    }
+
+    p{
+        font-size: 12px;
+
+        @media (min-width: $bp_desktop) {
+            font-size:16px;
+        }
+    }
+}
+
+.ambassador-dashboard-links-container{
+    width:100%;
+    max-width:450px;
+    margin:2rem auto;
+
+    @media (min-width: $bp_desktop) {
+        display:none;
+    }
+}
+
+#dropdown-button{
+    width:100%;
+    background:white;
+    text-transform:capitalize;
+    margin-bottom:0;
+    padding:1rem;
+    letter-spacing: 0.88px;
+    border:1px solid black;
+    text-align:left;
+    font-size:14px !important;
+}
+
+.toggle-icon{
+    margin-left:6px;
+    font-size:16px;
+}
+
+ul#dashboard-dropdown{
+    list-style: none;
+    padding-left:0;
+    margin:0;
+    border:1px solid black;
+    border-top:0;
+    font-size:14px;
+
+    li{
+        border-bottom:1px solid black;
+        padding: 1.25em 1em;
+
+        &:last-of-type{
+            border-bottom:0;
+        }
+    }
+
+    li a{
+        text-decoration:none;
+
+        &:hover{
+            text-decoration:underline;
+        }
+    }
+    
+}
+
+// .ambassador-card-container .row{
+
+//     @media (min-width: $bp_tablet) {
+//         margin-bottom:2rem;
+//     }
+   
+// }
+
+.ambassador-dashboard-card{
+   margin-bottom: 1rem;
+
+   @media (min-width: $bp_desktop) {
+    margin-bottom:2rem;
+}
+}
+
+.card-inner{
+    border:1px solid black;
+    padding:1.5rem;
+    width:100%;
+}
+
+.card-inner.full-height{
+    height:100%;
+    transition: all ease 1s;
+}
+
+
+.card-content{
+    display:none;
+
+    @media (min-width: $bp_desktop) {
+        display:block;
+    }
+}
+
+.toggle-trigger:after {
+    content: '+';
+  }
+
+.toggle-trigger.close-toggle:after {
+    content: '–';
+  }
+
+.toggle-trigger.close-toggle.mobile-toggle:after{
+    content: '+';
+}
+
+
+#eq-announcements {
+    .card-content{
+        display:block;
+
+        p {
+            font-size: 14px;
+            margin: 1rem 0;
+
+            @media (min-width: $bp_desktop) {
+                font-size:16px;
+            }
+        }
+    }
+}
+
+
+.card-title{
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing: 0.09px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:nowrap;
+    align-items:center;
+    font-size:14px;
+
+    @media (min-width: $bp_desktop) {
+        font-size:16px;
+    }
+
+    
+}
+
+.profile-text{
+
+    margin:1rem 0;
+
+    &:first-of-type{
+        margin-top:1.5rem;
+    }
+
+    p{
+        margin-bottom:0;
+        font-size:14px;
+
+        @media (min-width: $bp_desktop) {
+            font-size:16px;
+        }
+    }
+}
+
+div#ambassador-profile {
+
+    @media (min-width: $bp_tablet) {
+        margin-bottom:2rem;
+    }
+
+}
+
+div#ambassador-profile, div#dosage-contact-form{
+    
+    @media (max-width: $bp_tablet) {
+        padding-left:0;
+        padding-right:0;
+    }
+
+}
+
+
+.dashboard-link{
+    display:block;
+    margin:1rem auto;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:14px;
+    text-decoration:underline;
+
+    @media (min-width: $bp_desktop) {
+        font-size:14px;
+    }
+}
+
+.flex-container{
+    @media (min-width: $bp_tablet) {
+       display:flex;
+       flex-direction:column;
+       padding-right:0;
+       padding-left:0;
+    }
+}
+
+div#dosage-contact-form {
+    @media (min-width: $bp_tablet) {
+        flex-grow:2;
+     }
+}
+
+#ambassador-commission{
+
+    p{
+        font-size:14px;
+
+        @media (min-width: $bp_desktop) {
+            font-size:14px;
+        }
+    }
+
+    @media (min-width: $bp_tablet) {
+        order:99;
+    }
+}
+
+.commission-subtitle{
+    font-size:14px;
+    margin-top:1rem;
+    font-weight:900;
+
+    @media (min-width: $bp_desktop) {
+        font-size:14px;
+    }
+
+    &.all-caps{
+        text-transform: uppercase !important;
+    }
+}
+
+.card-content table{
+    font-size: 12px;
+    margin-top: 1rem;
+    table-layout:fixed;
+
+    @media (min-width: $bp_desktop) {
+        font-size:14px;
+    }
+}
+
+.card-content .order-type-container table, .card-content .sku-container table{
+    margin-top:0;
+    table-layout:fixed;
+}
+
+.order-type-container, .sku-container{
+    margin-top: 1rem;
+
+    p{
+        font-weight:500;
+    }
+}
+
+.earnings-subtitle{
+    margin-top:1.75rem;
+}
+
+#load-more-skus{
+    text-align:center;
+    text-transform: uppercase;
+    font-size:14px;
+    padding-top:5px;
+    font-weight:900;
+
+    @media (min-width: $bp_desktop) {
+        font-size:14px;
+    }
+}
+
+.sku-wrapper:nth-of-type(n+4){
+    display:none;
+}
+
+
+
+textarea#input_42_1, textarea#input_43_1{
+
+    &::placeholder{
+        font-size:14px;
+
+        @media (min-width: $bp_desktop) {
+            font-size:14px;
+        }
+    }
+}
+
+div#dosage-contact-form p:first-of-type, div#product-order-form p:first-of-type, div#generate-url p:first-of-type, div#creative-assets p:first-of-type{
+    margin-top:1rem;
+}
+
+li#field_42_1, li#field_43_1{
+    padding-right: 0;
+}
+
+
+input#gform_submit_button_43, input#gform_submit_button_42,  button#generate-url, a.button.dashboard-btn {
+    background: black;
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    color: white;
+
+    &:hover{
+        color:black;
+        background:white;
+    }
+}
+
+#gform_confirmation_wrapper_42, #gform_confirmation_message_43 {
+    padding: 2rem 0;
+    font-style:italic;
+}
+
+input#page-url{
+    padding-left:0;
+    font-size:14px;
+
+    @media (min-width: $bp_desktop) {
+        font-size:14px;
+    }
+}
+
+input#referral-link{
+    border-bottom:0;
+    padding-right:0;
+    padding-left:0;
+
+    &::placeholder{
+        font-style:italic;
+        font-size:14px;
+
+        @media (min-width: $bp_desktop) {
+            font-size:14px;
+        }
+    }
+}
+
+button#generate-url{
+    margin:1.5rem 0;
+}
+
+#creative-assets{
+
+    p{
+        font-size:14px;
+
+        @media (min-width: $bp_desktop) {
+            font-size:16px;
+        }
+    }
+
+    a{
+        display:block;
+        margin:1rem 0;
+        font-size:14px;
+
+        @media (min-width: $bp_desktop) {
+            font-size:14px;
+        }
+    }
+
+} 
+
+
+
+/* Commission table styles */ 
+
+#ambassador-commission .card-inner{
+    padding:0 0 1.5rem 0;
+
+}
+
+#ambassador-commission .card-inner .commission-card-inner, .table-inner{
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+    padding-bottom:0;
+}
+
+h4.card-title.commission-card-inner{
+    padding:1.5rem;
+}
+
+.commission-rate-padding{
+    padding-left:1.5rem;
+}
+
+
+.ambassador-commission-rates{
+    font-size:14px;
+
+    @media (min-width: $bp_desktop) {
+        font-size:14px;
+    }
+
+    tr:nth-of-type(3), tr:nth-of-type(5){
+        background: #f7f6f5;
+    }
+}
+
+.order-type-container, .sku-container{
+    padding: .25rem 1.5rem 0 1.5rem;
+}
+
+.order-type-wrapper:nth-of-type(even), .sku-wrapper:nth-of-type(even){
+    background: #f7f6f5;
+}
